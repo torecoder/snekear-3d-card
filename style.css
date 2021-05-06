@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+  perspective: 1000px;
+}
+
+/* logo */
+.logo {
+  text-align: center;
+  height: 8vh;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* container */
+.wrapper {
+  padding: 2rem 5rem;
+  background-color: khaki;
+  margin: 0 auto;
+  border-radius: 3rem;
+}
+
+/* card */
+.card {
+  transform-style: preserve-3d;
+  border-radius: 3rem;
+  width: 30rem;
+  height: 76vh;
+  padding: 3rem 3rem;
+  margin: auto;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* sneaker */
+.sneaker {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 25vh;
+  margin-bottom: 3rem;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  z-index: 1;
+}
+
+.sneaker img {
+  z-index: 2;
+  width: 20rem;
+  height: 15rem;
+  object-fit: contain;
+  transition: all 0.75s ease-out;
+}
+
+/* info */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #585858;
+  text-transform: uppercase;
+  transition: all 0.75s ease-out;
+}
+
+.sizes,
+.colors {
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 0.75s ease-out;
+}
+
+.sizes button,
+.colors button {
+  color: #585858;
+  background: none;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  width: 5rem;
+  font-weight: bold;
+}
+.sizes button:active,
+.colors button:active {
+  color: #fff;
+  background: #585858;
+}
+
+.purchase {
+}
+.purchase button {
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 3rem;
+  background: #f54642;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+}
